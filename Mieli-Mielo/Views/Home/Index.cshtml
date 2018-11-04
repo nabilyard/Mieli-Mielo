@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="jumbotron">
+    <h1>Miel Canadien</h1>
+    <p class="lead">
+        On doit aux abeilles canadiennes une production agricole d'une valeur pouvant atteindre 1 milliard de dollars par année.
+        Les apiculteurs louent leurs ruches à des horticulteurs le printemps venu, et les abeilles se chargent de la pollinisation
+    </p>
+    <h2>Miel Milles-Fleurs</h2>
+    <img class="img-responsive" src="~/Images/apiary-1866740_1920.jpg" height="60" width="850" style="margin-bottom: -10px" />
+    <p><a href='@Url.Action("details", "produits",new { id = 4 })' class="btn btn-primary btn-lg">Voir Details &raquo;</a></p>
+  
+   
+</div>
+
+<hr>
+<!-- Title -->
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Latest Features</h3>
+    </div>
+</div>
+<!-- /.row -->
+<!-- Page Features -->
+<div class="row text-center">
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            @*s<img src="http://placehold.it/800x500" >*@
+            <img src="~/Images/agriculture-apiary-beehive-1406954.jpg" alt="" height="800" width="500"/>
+            <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href='@Url.Action("details", "produits",new { id = 4 })' class="btn btn-default">Details</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+           @* <img src="http://placehold.it/800x500">*@
+            <img  src="~/Images/agriculture-apiary-beehive-1406954.jpg" alt="" />
+            <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href='@Url.Action("details", "produits",new { id = 5 })' class="btn btn-default">Details</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+           @* <img src="http://placehold.it/800x500" >*@
+            <img src="~/Images/honey-dipper-351485_1920.jpg" alt=""/>
+            <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href='@Url.Action("details", "produits",new { id = 9 })' class="btn btn-default">Details</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            
+            <img src="~/Images/honey-752145_1920.jpg" alt=""/>
+            <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href='@Url.Action("details", "produits",new { id = 10 })' class="btn btn-default">Details</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+<hr>

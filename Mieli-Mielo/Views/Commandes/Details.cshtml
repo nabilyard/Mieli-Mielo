@@ -1,0 +1,34 @@
+﻿@model Mieli_Mielo.Models.Commande
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Commande</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCommande)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCommande)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UtilisateurId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UtilisateurId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CommandeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

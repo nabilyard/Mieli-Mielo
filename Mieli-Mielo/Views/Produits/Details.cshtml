@@ -1,0 +1,68 @@
+﻿@model Mieli_Mielo.Models.Produit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Produit</h4>
+    <hr />
+   @** <dl class="dl-horizontal">*@
+
+
+
+        <div class="container" id="product-section">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <img src="~/Images/honey-dipper-351485_1920.jpg" alt="" height="800" width="500" class="image-responsive"/> 
+                </div>
+                <div class="col-md-6">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Nom)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Nom)
+                    </dd>
+
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Prix)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Prix)
+                    </dd>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+
+
+
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prix)
+        </dd>*@
+
+   @*</dl>*@ 
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
