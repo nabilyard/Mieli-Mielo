@@ -29,7 +29,7 @@ namespace Mieli_Mielo.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Notre Mission:";
 
             return View();
         }
