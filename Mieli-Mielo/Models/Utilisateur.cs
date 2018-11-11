@@ -10,10 +10,15 @@ namespace Mieli_Mielo.Models
     {
         [Key]
         public int UserID { get; set; }
+
         [Required]
+        [Display(Name = "Nom")]
         public string Nom { get; set; }
+
         public string Prenom { get; set; }
 
         public virtual ICollection<Commande> Commandes { get; set; }
+
+        public SignUp SignUpId { get; set; }
     }
 }

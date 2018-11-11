@@ -10,8 +10,13 @@ namespace Mieli_Mielo.DAL
     public class MielContext : DbContext
     {
         public DbSet<Utilisateur> Utilisateurs { get; set; }
+
         public DbSet<Commande> Commandes { get; set; }
+
+    
         public DbSet<Produit> Produits { get; set; }
+
+        public DbSet<SignUp> InfoLogin { get; set; }
 
     }
 }

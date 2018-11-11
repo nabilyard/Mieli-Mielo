@@ -1,0 +1,34 @@
+﻿@model Mieli_Mielo.ViewModels.UtilisateurLoginViewModel
+@{
+    ViewBag.Title = "SignUp";
+}
+
+<h2>SignUp</h2>
+
+@using (Html.BeginForm("Create", "Login"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.User.Nom)
+        @Html.TextBoxFor(m => m.User.Nom, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.User.Prenom)
+        @Html.TextBoxFor(m => m.User.Prenom, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SignUser.Email)
+        @Html.TextBoxFor(m => m.SignUser.Email, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.SignUser.PassWord)
+        @Html.TextBoxFor(m => m.SignUser.PassWord, new { @class = "form-control" })
+    </div>
+
+    @*<div class="form-group">
+        <label>Confirmer Mot de passe</label>
+        @Html.TextBoxFor(m => m.SignUser.PassWord, new { @class = "form-control" })
+    </div>*@
+
+    <button type="submit" class="btn btn-primary" >Sauvegarder</button>
+}
