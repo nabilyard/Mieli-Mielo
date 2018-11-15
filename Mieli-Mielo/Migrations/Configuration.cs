@@ -9,7 +9,7 @@ namespace Mieli_Mielo.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Mieli_Mielo.DAL.MielContext context)

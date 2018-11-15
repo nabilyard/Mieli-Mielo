@@ -11,6 +11,7 @@ using Mieli_Mielo.Models;
 
 namespace Mieli_Mielo.Controllers
 {
+    [Authorize]
     public class UtilisateursController : Controller
     {
         private MielContext db = new MielContext();

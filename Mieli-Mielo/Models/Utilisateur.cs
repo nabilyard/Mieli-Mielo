@@ -19,6 +19,7 @@ namespace Mieli_Mielo.Models
 
         public virtual ICollection<Commande> Commandes { get; set; }
 
-        public SignUp SignUpId { get; set; }
+        
+        public SignUp SignUp { get; set; }
     }
 }

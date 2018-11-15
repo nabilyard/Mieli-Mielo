@@ -15,7 +15,10 @@
                 <li>@Html.ActionLink("Produits", "Index", "Produits")</li>
                 <li>@Html.ActionLink("Recettes", "Recettes", "Home")</li>
                 <li>@Html.ActionLink("Contactez-nous", "Contact", "Home")</li>
-      
+                @if (Request.IsAuthenticated)
+                {
+                    <li> @Html.ActionLink("Se déconnecter", "Logout", "Login") </li>
+                }
             </ul>
         </div>
     </div>

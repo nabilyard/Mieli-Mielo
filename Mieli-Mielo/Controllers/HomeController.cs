@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace Mieli_Mielo.Controllers
 {
+    
     public class HomeController : Controller
     {
         //private MielContext _context;
@@ -34,8 +35,8 @@ namespace Mieli_Mielo.Controllers
             return View();
         }
 
-      
 
+        [Authorize]
         public ActionResult Recettes()
         {
             ViewBag.Message = "Your recepee page.";

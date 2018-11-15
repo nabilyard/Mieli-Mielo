@@ -25,10 +25,10 @@
         @Html.TextBoxFor(m => m.SignUser.PassWord, new { @class = "form-control" })
     </div>
 
-    @*<div class="form-group">
-        <label>Confirmer Mot de passe</label>
-        @Html.TextBoxFor(m => m.SignUser.PassWord, new { @class = "form-control" })
-    </div>*@
+    <div class="form-group">
+        @Html.LabelFor(m => m.SignUser.ConfirmPassWord)
+        @Html.TextBoxFor(m => m.SignUser.ConfirmPassWord, new { @class = "form-control" })
+    </div>
 
     <button type="submit" class="btn btn-primary" >Sauvegarder</button>
 }

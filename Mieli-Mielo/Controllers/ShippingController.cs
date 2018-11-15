@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Mieli_Mielo.Controllers
 {
+    [Authorize]
     public class ShippingController : Controller
     {
         // GET: Shipping
