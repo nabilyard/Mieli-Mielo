@@ -307,6 +307,14 @@
     <Compile Include="Migrations\201811141812178_confirmPassWord.Designer.cs">
       <DependentUpon>201811141812178_confirmPassWord.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811152321060_authentification.cs" />
+    <Compile Include="Migrations\201811152321060_authentification.Designer.cs">
+      <DependentUpon>201811152321060_authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811152332585_PopulateDataBase.cs" />
+    <Compile Include="Migrations\201811152332585_PopulateDataBase.Designer.cs">
+      <DependentUpon>201811152332585_PopulateDataBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Commande.cs" />
     <Compile Include="Models\Login.cs" />
@@ -470,6 +478,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811141812178_confirmPassWord.resx">
       <DependentUpon>201811141812178_confirmPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811152321060_authentification.resx">
+      <DependentUpon>201811152321060_authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811152332585_PopulateDataBase.resx">
+      <DependentUpon>201811152332585_PopulateDataBase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

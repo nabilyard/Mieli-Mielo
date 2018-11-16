@@ -11,10 +11,12 @@ namespace Mieli_Mielo.Models
     {
         [Key]
         [ForeignKey("Utilisateur")]
-        //public int SignUpId { get; set; }
-       public int UserID { get; set; }
+        
+        public int UserID { get; set; }
 
-
+        
+        [Required(ErrorMessage = "Adresse e-mail estr equise")]
+        [EmailAddress(ErrorMessage = "Addresse e-mail Invalide !!!")]
         public string Email{ get; set; }
 
         [Display(Name = "Mot de Passe")]
