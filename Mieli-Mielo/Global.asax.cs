@@ -15,7 +15,7 @@ namespace Mieli_Mielo
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-           // App_Start.FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+           //App_Start.FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AntiForgeryConfig.UniqueClaimTypeIdentifier = ClaimTypes.NameIdentifier;
